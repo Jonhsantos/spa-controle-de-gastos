@@ -1,0 +1,98 @@
+:root {
+    /* Cores Principais */
+    --color-black: #111111;
+    --color-white: #FFFFFF;
+    --text-white-white: #ffffff;
+    --color-gray-light: #F3F4F6;
+    --color-gray-medium: #6B7280;
+
+    /* Cores de Fundo dos Cards */
+    --bg-incomes: #E8F9E5;
+    --bg-balance: #FFF4C2;
+    --bg-expenses: #FFE5E8;
+
+    /* Cores dos Botões e Ícones */
+    --color-green: #23C414;
+    --color-yellow: #FFC300;
+    --color-red: #F42F3E;
+    --color-blue: #2196F3;
+    --color-gray-light: #F3F4F6;
+
+    /* Cores de Texto */
+    --text-primary: #111111;
+    --text-secondary: #6B7280;
+    --text-white: #FFFFFF;
+
+    /* Cores de Bordas */
+    --border-color: #111111;
+    --border-width: 2px;
+    --border-width-thick: 3px;
+    --border-width-thickest: 4px;
+
+    /* Espaçamentos */
+    --spacing-xs: 8px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 50px;
+
+    /* Tamanhos de Fonte */
+    --font-size-sm: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 22px;
+    --font-size-xl: 28px;
+    --font-size-xxl: 48px;
+
+    /* Dimensões */
+    --container-max-width: 1116px;
+    --card-min-height: 247px;
+    --btn-min-height: 101px;
+    --icon-size: 44px;
+
+    /* Tipografia (novo) */
+    --font-display: 'Space Grotesk', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+    /* Sombra dura (estilo ledger, sem blur, sem raio) */
+    --shadow-hard: 6px 6px 0 var(--border-color);
+    --shadow-hard-sm: 4px 4px 0 var(--border-color);
+}
+
+/* Modo Escuro */
+[data-theme="dark"] {
+    /* Cores Principais */
+    --color-black: #FFFFFF;
+    --color-white: #1a1a1a;
+    --color-gray-light: #3d3d3d;
+    --color-gray-medium: #a0a0a0;
+
+    /* Cores de Fundo dos Cards (versão escura) */
+    --bg-incomes: #1a3d1a;
+    --bg-balance: #3d3a1a;
+    --bg-expenses: #3d1a1a;
+
+    /* Cores dos Botões e Ícones (mantêm as cores vibrantes) */
+    --color-green: #32CD32;
+    --color-yellow: #FFD700;
+    --color-red: #FF4444;
+    --color-blue: #4A90E2;
+
+    /* Cores de Texto */
+    --text-primary: #FFFFFF;
+    --text-secondary: #a0a0a0;
+    --text-white: #111111;
+
+    /* Cores de Bordas */
+    --border-color: #FFFFFF;
+
+    /* Cores de Fundo */
+    --body-bg: #1a1a1a;
+    --container-bg: #2d2d2d;
+    --form-bg: #2d2d2d;
+
+    /* Progress Bars (versão escura) */
+    --hr-incomes-dark: #32CD32;
+    --hr-balance-dark: #FFD700;
+    --hr-expenses-dark: #FF4444;
+}

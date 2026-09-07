@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;700&display=swap">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title">Controle de gastos</h1>
+            <div class="night-mode-toggle">
+                <span class="material-symbols-outlined">brightness_4</span>
+                <span>Modo Noturno</span>
+            </div>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="summary-cards">
+            <!-- Entradas Card -->
+            <div class="card card-incomes">
+                <div class="card-header">
+                    <h3>ENTRADAS</h3>
+                    <div class="card-icon">
+                        <span class="material-symbols-outlined">add_circle</span>
+                    </div>
+                </div>
+                <div class="card-value">R$ 1.234</div>
+                <hr class="hr-bar hr-incomes">
+            </div>
+
+            <!-- Saldo Card -->
+            <div class="card card-balance">
+                <div class="card-header">
+                    <h3>SALDO</h3>
+                    <div class="card-icon">
+                        <span class="material-symbols-outlined">account_balance</span>
+                    </div>
+                </div>
+                <div class="card-value">R$ 0</div>
+                <hr class="hr-bar hr-balance">
+            </div>
+
+            <!-- Despesas Card -->
+            <div class="card card-expenses">
+                <div class="card-header">
+                    <h3>DESPESAS</h3>
+                    <div class="card-icon">
+                        <span class="material-symbols-outlined">remove_circle</span>
+                    </div>
+                </div>
+                <div class="card-value">R$ 567</div>
+                <hr class="hr-bar hr-expenses">
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-add-incomes">
+                <span class="material-symbols-outlined">arrow_upward</span>
+                ADICIONAR ENTRADAS
+            </button>
+            <button class="btn btn-add-expenses">
+                <span class="material-symbols-outlined">arrow_downward</span>
+                ADICIONAR DESPESAS
+            </button>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <button class="btn-close-form" id="btnCloseForm">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h2>Adicionar Novo Item</h2>
+            <div class="form-group">
+                <label for="itemName">Nome do item</label>
+                <input type="text" id="itemName" placeholder="Ex: Conta de luz">
+            </div>
+            <div class="form-group" id="incomeCategoryGroup">
+                <label for="incomeCategory">Tipo de entrada</label>
+                <select id="incomeCategory">
+                    <option value="salario" selected>Salário</option>
+                    <option value="premio">Prêmio</option>
+                    <option value="comissao">Comissão</option>
+                    <option value="bonus">Bônus</option>
+                    <option value="investimento">Investimento</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="outro">Outros</option>
+                </select>
+            </div>
+            <div class="form-group" id="expenseCategoryGroup" style="display: none;">
+                <label for="expenseCategory">Categoria de despesa</label>
+                <select id="expenseCategory">
+                    <option value="contas" selected>Contas</option>
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="lazer">Lazer</option>
+                    <option value="saude">Saúde</option>
+                    <option value="educacao">Educação</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group" id="otherCategoryGroup" style="display: none;">
+                <label for="otherCategory">Outra categoria</label>
+                <input type="text" id="otherCategory" placeholder="Digite a categoria...">
+            </div>
+            <div class="form-group">
+                <label for="amount">Valor (R$)</label>
+                <input type="number" id="amount" placeholder="0.00" step="0.01" min="0">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-save" id="btnSave">
+                    <span class="material-symbols-outlined">check</span>
+                    SALVAR
+                </button>
+            </div>
+        </div>
+
+        <!-- Items List -->
+        <div class="items-list">
+            <h2>Lista de Itens</h2>
+        </div>
+    </div>
+    <script src="scrips.js"></script>
+</body>
+</html>
